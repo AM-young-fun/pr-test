@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101b3d" />
+    <meta name="description" content="中国互联网公关传播力测试｜全国Ⅰ卷。测出你的叙事力、战情力与声誉判断力。" />
+    <title>中国互联网公关传播力测试｜全国Ⅰ卷</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <main id="app" class="app-shell">
+      <section class="paper" id="quiz-view">
+        <header class="paper-head">
+          <div class="secret">绝密★启用前</div>
+          <div class="brand-mark"><span class="brand-dot"></span>叙事研究所 <em>/</em> PUBLIC AFFAIRS LAB</div>
+          <p class="edition">2026 年中国互联网公关传播力统一测试</p>
+          <h1>公关传播力</h1>
+          <div class="sub-title">（全国Ⅰ卷）</div>
+          <div class="candidate-row">
+            <label>姓名 <input id="candidate" maxlength="12" placeholder="写下你的名字" /></label>
+            <span>考号 <b id="exam-no">2 0 2 6 1 0 0 9 0 1</b></span>
+          </div>
+          <div class="score-table" aria-label="得分表">
+            <div>题号</div><div>一</div><div>二</div><div>三</div><div>四</div><div>总分</div>
+            <div>得分</div><div id="section-1">—</div><div id="section-2">—</div><div id="section-3">—</div><div id="section-4">—</div><div id="total-score">—</div>
+          </div>
+        </header>
+        <div class="notice">
+          <strong>注意事项：</strong>
+          <ol>
+            <li>答卷前，请将姓名填写在试卷指定位置。姓名仅用于生成你的荣誉卡片。</li>
+            <li>本试卷共四大题，24 小题，满分 100 分。点击选项即视为作答。</li>
+            <li>多项选择题全部选对得满分；少选得部分分；错选不得分。</li>
+            <li>本测试为行业自测与社交分享用途，不代表任何公司招聘、认证或绩效结论。</li>
+          </ol>
+        </div>
+        <div id="questions"></div>
+        <footer class="paper-foot"><span>PR / REPUTATION / NARRATIVE</span><span>中国互联网公关传播力测试 · 第 1 页（共 1 页）</span><a href="https://github.com/AM-young-fun/pr-test" target="_blank" rel="noreferrer">开源项目 · GitHub Star / Follow ↗</a></footer>
+      </section>
+      <div class="action-bar" id="action-bar">
+        <span id="progress">已作答 0 / 24　用时 00:00</span>
+        <button class="primary-btn" id="submit-btn">交卷 <span>↗</span></button>
+      </div>
+      <section class="results" id="results-view" hidden></section>
+    </main>
+    <script src="dist/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --minify --outfile=dist/app.js",
+    "test": "node --check src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AM-young-fun/pr-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AM-young-fun/pr-test/issues"
+  },
+  "homepage": "https://github.com/AM-young-fun/pr-test#readme",
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "qrcode": "^1.5.4"
+  }
+}
